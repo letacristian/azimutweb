@@ -11,28 +11,37 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
+    For GitHub Pages, use --base-href when building:
+    flutter build web --base-href /username/repo-name/
+
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
 
+  <!-- GitHub Pages 404 redirect for SPA routing -->
+  <script>
+    sessionStorage.redirect && (location.href = sessionStorage.redirect);
+  </script>
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Sistema Azimut - Gestión de Inventario">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="azimut">
+  <meta name="apple-mobile-web-app-title" content="Azimut">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>azimut</title>
+  <title>Azimut</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <noscript>It's required to enable JavaScript to run this application.</noscript>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
