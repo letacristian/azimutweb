@@ -1,4 +1,4 @@
-name: azimut
+﻿name: azimut
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -16,8 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 26.10.26+4
-
+version: 26.11.3+7
 environment:
   sdk: ^3.5.4
 
@@ -107,7 +106,7 @@ msix_config:
   publisher_display_name: Sistema Azimut
   identity_name: sistemaazimut.azimut
   publisher: CN=Azimut Publisher
-  msix_version: 26.10.26.4
+  msix_version: 26.11.3.6
   logo_path: assets/icon/app_icon.png
   capabilities: internetClient
   install_certificate: false
@@ -124,8 +123,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    # El archivo .env (raíz del proyecto) con las variables de Supabase.
-    # Se carga en tiempo de ejecución con flutter_dotenv. Está ignorado en
+    # El archivo .env (raÃ­z del proyecto) con las variables de Supabase.
+    # Se carga en tiempo de ejecuciÃ³n con flutter_dotenv. EstÃ¡ ignorado en
     # git (.gitignore); debe existir localmente para configurar Supabase.
     - .env
     - pubspec.yaml
@@ -160,3 +159,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
